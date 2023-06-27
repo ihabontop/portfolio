@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Viga', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    padding-top: 60px; /* pour éviter que la barre de navigation chevauche le contenu */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0f4c81;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+section ul {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+section li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+section a {
+    color: #0f4c81;
+}
+
+section form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+section input,
+section textarea {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+section button[type="submit"] {
+    background-color: #0f4c81;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+section button[type="submit"]:hover {
+    background-color: #06324d;
+}
+
+#btnScrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0f4c81;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+#btnScrollToTop i {
+    margin-top: 12px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+.contact{
+    
+}
+

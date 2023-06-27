@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Profil - Mon portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="profil.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul class="nav-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="profil.html">Profil</a></li>
+              <li><a href="ecole.html">École</a></li>
+              <li><a href="entreprise.html">Entreprise</a></li>
+              <li><a href="bts-sio.html">BTS-SIO</a></li>
+              <li><a href="veille-technologique.html">Veille technologique</a></li>
+              <li><a href="veille-juridique.html">Veille juridique</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <main class="container">
+      <section class="profile-section">
+        <div class="profile-img">
+          <img src="IMG_0908.jpg" alt="Photo de profil">
+        </div>
+      </section>
+      
+      <div class="profile-text">
+        <h2><span id="typing-name"></span></h2>
+        <p><span id="typing-status"></span></p>
+        <p><span id="typing-message"></span></p>
+      </div>
+      
+      <div class="profile-buttons">
+        <a href="Documentation Linkedin Ihab.pdf" target="_blank" class="btn btn-view-pdf">Consulter Documentation LinkedIn</a>
+        <a href="Documentation Linkedin Ihab.pdf" download class="btn btn-download-pdf">Télécharger Documentation LinkedIn</a>
+      </div>
+
+
+      <div class="btn-container">
+        <button class="pdf-btn"><a href="benkrouidem-ihab-cv (3).pdf" target="_blank">Consulter le CV</a></button>
+        <button class="pdf-btn"><a href="benkrouidem-ihab-cv (3).pdf" download>Télécharger le CV</a></button>
+      </div>
+
+    </main>
+    <button id="btnScrollToTop" aria-label="Retour en haut de page"><i class="fas fa-arrow-up"></i></button>
+    <script src="accueil.js"></script>
+  </body>
+</html>
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #26547C;
+  color: #fff;
+} */
+
+.logo {
+  font-size: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-img img {
+  width: 350px;
+  height: 220px;
+  border-radius: 0%;
+  margin-bottom: 3px;
+}
+
+.profile-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.profile-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.btn-pdf {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn-pdf:hover {
+  background-color: #0062cc;
+}
+
+.btn-download {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.btn-download:hover {
+  background-color: #218838;
+}
+
+/* Départ boutton LinkedIn */ 
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.btn-view-pdf {
+  background-color: #008CBA;
+  color: #FFFFFF;
+}
+
+.btn-download-pdf {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+/* Fin boutton LinkedIn */ 
+
+/*  Debut css des boutons CV */
+.pdf-btn {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.pdf-btn a {
+  color: #FFFFFF;
+}
+
+.pdf-btn:hover {
+  cursor: pointer;
+}
+
+.pdf-btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.pdf-btn:nth-of-type(1) {
+  background-color: #008CBA;
+}
+
+.pdf-btn:nth-of-type(2) {
+  background-color: #4CAF50;
+}
+
+/* Fin css des boutons CV */
+
+body {
+            background-image: url('https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+            background-position: center;
+            background-size: cover;
+            color:aliceblue
+        }
+
+#typing-text {
+  font-size: 24px;
+  font-family: sans-serif;
+  color: #000;
+  margin: 50px;
+  border-right: 2px solid #000;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30ch;
+  animation: typing 3s steps(30, end), blink .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 30ch }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #000 }
+}
+
+</style>
